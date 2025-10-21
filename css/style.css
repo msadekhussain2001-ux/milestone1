@@ -1,0 +1,92 @@
+body {background-color: white;}
+
+.original-header {
+  background-color: black;color: white;position: fixed;top: o;left: 0;width:100%;z-index: 10;padding: 15px 0;box-shadow:0 2px 5px black ;}
+/* z-index allows the header to stays in front of all other elments and position being fixed allows it to stay in its place  */
+.world-title {color: white;text-align: center;}
+
+.tabs-home {text-align: center;font-size: 30px;color: white;} 
+.tabs-home a{text-decoration:none;padding: 10px 20px;margin: 0 10px;border-radius: 5px;font-weight: bold;}
+
+.image-gallery {display: grid; grid-template-columns: 1fr; gap: 20px;}
+
+.image-gallery div { position: relative;}
+
+.image-gallery img { display: block;width: 100%;height: auto;}
+
+.image-gallery p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  /* translate(-50%, -50%) then shifts it back by half its own width and height, so it’s perfectly centered. */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 90%;}
+/* transform,font size ,font weight,border radius and padding taken from https://www.w3schools.com/css/ */
+
+/* added in text over images  */
+/* had issues with making images into column original code .image-gallery img {display:block;margin:20px;max-width:100%;height: auto;} */
+
+.features-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* watched a youtube video on how to make images in grid form  */
+.features-home img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.bronze-age {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+  color: white;
+}
+
+.bronze-age h2,
+.bronze-age p,
+.bronze-age input {
+  margin: 5px 0;
+}
+
+.bronze-age img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover
+}
+
+.newsletter {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+footer {background-color: black;color: white;padding: 40px 20px;text-align: center;position: relative;}
+footer section {margin: bottom 20px;}  
+footer h2{font: size 1.5rem;margin-bottom: 10px;}  
+footer p {margin:5px;}
+footer a {color:beige;text-decoration: none;margin: 0 10px;font-weight: bold;}
+
